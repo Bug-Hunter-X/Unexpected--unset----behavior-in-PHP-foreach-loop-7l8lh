@@ -1,0 +1,3 @@
+This repository demonstrates a common but subtle error in PHP related to using `unset()` inside a `foreach` loop to modify an array during iteration. The issue arises because `unset()` modifies the internal array pointer, causing the loop to skip elements after the `unset()` call.
+
+The `bug.php` file shows the problematic code. The `bugSolution.php` provides a corrected approach using a `for` loop or iterating over a copy of the array.
